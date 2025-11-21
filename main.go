@@ -14,15 +14,15 @@ import (
 	"os"
 )
 func main () {
-var PersonsName string
+	var PersonsName string
 
-reader := bufio.NewReader(os.Stdin)
+	reader := bufio.NewReader(os.Stdin)
 
-fmt.Print("What is your name? ")
-PersonsName, _ = reader.ReadString('\n')
-PersonsName = strings.TrimSpace(PersonsName)
+	fmt.Print("What is your name? ")
+	PersonsName, _ = reader.ReadString('\n')
+	PersonsName = strings.TrimSpace(PersonsName)
 
-fmt.Println("Happy birthday to you. Happy birthday to you. Happy birthday, dear " + PersonsName + ". happy birthday to you.")
+	fmt.Println("Happy birthday to you. Happy birthday to you. Happy birthday, dear " + PersonsName + ". happy birthday to you.")
 
-fmt.Println("\nDone")
+	fmt.Println("\nDone")
 }
